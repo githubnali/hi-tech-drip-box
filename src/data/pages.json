@@ -1,0 +1,32 @@
+{
+  "home": {
+    "path": "/",
+    "title": "Hi-Tech Drip Box | Automated Terrace Gardening Systems",
+    "description": "Transform your rooftop into an automated terrace garden with Hi-Tech Drip Box. Explore fiberglass planters, drip irrigation systems, and professional installation.",
+    "heading": "Turn Your Terrace Into a Beautiful, Self-Watering Garden."
+  },
+  "systems": {
+    "path": "/our-systems",
+    "title": "Our Systems | Automated Terrace Garden Kits | Hi-Tech Drip Box",
+    "description": "Compare the two ready-to-install Hi-Tech Drip Box terrace garden systems: Vegetables & Creepers and Small Trees. Prices, planter sizes and kit contents.",
+    "heading": "Choose the Right Garden System for Your Terrace"
+  },
+  "howItWorks": {
+    "path": "/how-it-works",
+    "title": "How It Works | Terrace Garden Installation Process | Hi-Tech Drip Box",
+    "description": "See how Hi-Tech Drip Box sets up your automated terrace garden in five steps — from assessing your space to automatic irrigation, installation and plant care.",
+    "heading": "From Your Terrace to a Thriving Organic Garden"
+  },
+  "gardens": {
+    "path": "/our-gardens",
+    "title": "Our Gardens | Real Terrace Garden Installations | Hi-Tech Drip Box",
+    "description": "Explore photographs of installed Hi-Tech Drip Box terrace gardens with vegetables, flowers, leafy greens and small fruiting plants in fibre planters.",
+    "heading": "Real Terrace Gardens, Real Results"
+  },
+  "contact": {
+    "path": "/contact",
+    "title": "Contact Us | Plan Your Terrace Garden | Hi-Tech Drip Box",
+    "description": "Talk to Alexander about an automated terrace garden for your home. Send an enquiry, call +91 98840 35450 or message Hi-Tech Drip Box on WhatsApp.",
+    "heading": "Let's Build Your Terrace Garden"
+  }
+}

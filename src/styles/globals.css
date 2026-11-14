@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #164b2b;
+    --color-primary-dark: #0b351c;
+    --color-primary-light: #78a85a;
+    --color-secondary: #15518c;
+    --color-background-soft: #f6f7ef;
+    --color-surface-green: #eaf4e4;
+    --color-border: #e2e8df;
+    --color-accent: #d8b66a;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    background-image: linear-gradient(to bottom, rgba(246, 247, 239, 0.32), transparent 26rem);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: #d9eacd;
+    color: #0b351c;
+  }
+
+  :target {
+    scroll-margin-top: 6.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply sr-only;
+  }
+
+  .skip-link:focus {
+    @apply not-sr-only fixed left-4 top-4 z-[60] rounded-full bg-forest-800 px-5 py-3 text-sm font-semibold text-white shadow-lift;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-[0.95rem] text-ink placeholder:text-muted/70 transition-colors focus:border-forest-600 focus:outline-none focus:ring-2 focus:ring-forest-600/20;
+  }
+
+  .field[aria-invalid='true'] {
+    @apply border-red-400 focus:border-red-500 focus:ring-red-200;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-[0.82rem] font-semibold text-forest-900;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest-700 focus-visible:ring-offset-2;
+  }
+
+  .hero-image-wash {
+    background: linear-gradient(
+      90deg,
+      rgba(246, 247, 239, 0.98) 0%,
+      rgba(246, 247, 239, 0.94) 58%,
+      rgba(246, 247, 239, 0.42) 100%
+    );
+  }
+
+  .home-hero-image-wash {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.99) 0%,
+      rgba(255, 255, 255, 0.95) 58%,
+      rgba(255, 255, 255, 0.35) 100%
+    );
+  }
+
+  @media (min-width: 1024px) {
+    .hero-image-wash {
+      background: linear-gradient(
+        90deg,
+        #f6f7ef 0%,
+        rgba(246, 247, 239, 0.96) 34%,
+        rgba(246, 247, 239, 0.58) 44%,
+        rgba(246, 247, 239, 0.12) 53%,
+        transparent 61%
+      );
+    }
+
+    .home-hero-image-wash {
+      background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.97) 34%,
+        rgba(255, 255, 255, 0.6) 44%,
+        rgba(255, 255, 255, 0.12) 53%,
+        transparent 61%
+      );
+    }
+  }
+
+}
+
+@layer utilities {
+  .text-shadow-soft {
+    text-shadow: 0 1px 16px rgba(8, 38, 20, 0.35);
+  }
+
+  .mask-fade-r {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 22%);
+    mask-image: linear-gradient(to right, transparent, black 22%);
+  }
+}
